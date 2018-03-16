@@ -18,8 +18,10 @@ node("docker-agent") {
     }
     
     stage('Deploy') {
-        sh "docker stop seaside-example"
-        sh "docker rm seaside-sexample"
+        catch (error) {
+            sh "docker stop seaside-example"
+            sh "docker rm seaside-sexample"
+        }
         sh "docker run -d --name=seaside-example -e VIRTUAL_HOST=seaside-example.drunkturtle.com -e VIRTUAL_PORT=8080  shidima/seaside-example"
     }
 }
