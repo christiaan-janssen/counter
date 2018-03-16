@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "ChristiaanJanssen 3/8/2018 11:14",
+	"super" : "WAComponent",
+	"category" : "WebCounter",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"count"
+	],
+	"name" : "WebCounter",
+	"type" : "normal"
+}
